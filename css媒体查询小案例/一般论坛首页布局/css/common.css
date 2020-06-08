@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  font-size: 15px;
+  user-select: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+.header span {
+  padding: 0.5rem 1rem;
+  color: rgba(0,0,0,0.7);
+  font-weight: bold;
+}
+.header .nav {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .nav ul {
+  flex: 1;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: rgba(0,0,0,0.7);
+  font-weight: bold;
+  cursor: pointer;
+}
+li:hover {
+  color: #000;
+}
+
+.btn div{
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background: #28a745 ;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  color: #fff;
+}
+
+.btn div:hover{
+  background: #218838;
+}
+
+.btn div:nth-child(2) {
+  background: none;
+  border: 1px solid #0056b3;
+  color: #0056b3;
+}
+.btn div:nth-child(2):hover {
+  background: #0056b3;
+  color: #fff;
+}
+.line {
+  width: 100vw;
+  height: 0.2rem;
+  background: #218838;
+  box-shadow: 0 5px 5px #777;
+}
+
+.label {
+  display: flex;
+}
+.swicth {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #218838;
+  color: #fff;
+  margin: auto;
+  display: none;
+  border-radius: 0.2rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked+.nav {
+  display: block !important;
+}

@@ -1,0 +1,26 @@
+/* @media screen and (max-width:768px) {
+  .nav {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 768px){
+  .header {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .nav {
+    display:  flex;
+    display: none !important;
+  }
+  .nav  li {
+      display:block;
+    }
+    .label span{
+      flex: 1;
+    }
+  .swicth {
+    margin: auto 0 auto auto;
+    display: inline-block !important;
+  }
+}
